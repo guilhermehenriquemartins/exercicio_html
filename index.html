@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+  <main>
+    <h1>Formulário de cadastro</h1>
+    <form action="login.php" method="post" autocomplete="off">
+        <fieldset>
+          <legend>Preencha os campos:</legend>
+          <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" maxlength="40" autocomplete="username" required placeholder="Nome Completo" size="25">
+          </p>
+          <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" required size="30">
+          </p>
+          <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required size="25" autocomplete="new-password" minlength="5" maxlength="30" placeholder="Mín 5 e Máx 30 Caracteres">
+          </p>
+          <p id="botao">
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+          </p>
+        </fieldset>
+    </form>
+  </main>
+</body>
+</html>
